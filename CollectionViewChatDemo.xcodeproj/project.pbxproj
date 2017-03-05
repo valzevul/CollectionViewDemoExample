@@ -12,6 +12,8 @@
 		82824C791E64448C0091F6CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82824C771E64448C0091F6CF /* Main.storyboard */; };
 		82824C7B1E64448C0091F6CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82824C7A1E64448C0091F6CF /* Assets.xcassets */; };
 		82824C7E1E64448C0091F6CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82824C7C1E64448C0091F6CF /* LaunchScreen.storyboard */; };
+		8282AB411E6C693300D8FCFD /* RestaurantCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8282AB3F1E6C693300D8FCFD /* RestaurantCollectionViewCell.swift */; };
+		8282AB421E6C693300D8FCFD /* RestaurantCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8282AB401E6C693300D8FCFD /* RestaurantCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		82824C7A1E64448C0091F6CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82824C7D1E64448C0091F6CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		82824C7F1E64448C0091F6CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8282AB3F1E6C693300D8FCFD /* RestaurantCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantCollectionViewCell.swift; sourceTree = "<group>"; };
+		8282AB401E6C693300D8FCFD /* RestaurantCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RestaurantCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,32 @@
 		82824C721E64448B0091F6CF /* CollectionViewChatDemo */ = {
 			isa = PBXGroup;
 			children = (
-				82824C731E64448B0091F6CF /* AppDelegate.swift */,
-				82824C751E64448B0091F6CF /* ViewController.swift */,
 				82824C771E64448C0091F6CF /* Main.storyboard */,
+				82824C751E64448B0091F6CF /* ViewController.swift */,
+				8282AB431E6C694B00D8FCFD /* Other */,
+				8282AB441E6C695700D8FCFD /* Restaurant Cell */,
+			);
+			path = CollectionViewChatDemo;
+			sourceTree = "<group>";
+		};
+		8282AB431E6C694B00D8FCFD /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				82824C731E64448B0091F6CF /* AppDelegate.swift */,
 				82824C7A1E64448C0091F6CF /* Assets.xcassets */,
 				82824C7C1E64448C0091F6CF /* LaunchScreen.storyboard */,
 				82824C7F1E64448C0091F6CF /* Info.plist */,
 			);
-			path = CollectionViewChatDemo;
+			name = Other;
+			sourceTree = "<group>";
+		};
+		8282AB441E6C695700D8FCFD /* Restaurant Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8282AB3F1E6C693300D8FCFD /* RestaurantCollectionViewCell.swift */,
+				8282AB401E6C693300D8FCFD /* RestaurantCollectionViewCell.xib */,
+			);
+			name = "Restaurant Cell";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +148,7 @@
 			files = (
 				82824C7E1E64448C0091F6CF /* LaunchScreen.storyboard in Resources */,
 				82824C7B1E64448C0091F6CF /* Assets.xcassets in Resources */,
+				8282AB421E6C693300D8FCFD /* RestaurantCollectionViewCell.xib in Resources */,
 				82824C791E64448C0091F6CF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8282AB411E6C693300D8FCFD /* RestaurantCollectionViewCell.swift in Sources */,
 				82824C761E64448B0091F6CF /* ViewController.swift in Sources */,
 				82824C741E64448B0091F6CF /* AppDelegate.swift in Sources */,
 			);
