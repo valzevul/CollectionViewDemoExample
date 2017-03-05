@@ -30,6 +30,15 @@ extension ViewController: UICollectionViewDataSource {
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     
     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RestaurantCollectionViewCell", for: indexPath) as! RestaurantCollectionViewCell
+    let demo = data[indexPath.row]
+    
+    cell.restaurantImage.image = UIImage(named: demo.imageName)
+    cell.restaurantNameLabel.text = demo.name
+    cell.restaurantTypeLabel.text = demo.type
+    cell.restaurantAddressLabel.text = demo.address
+    cell.providerNameLabel.text = demo.providerName
+    cell.providerImage.image = UIImage(named: demo.providerImageName)
+    cell.providerDescriptionLabel.text = demo.description
     return cell
   }
 
