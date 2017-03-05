@@ -8,23 +8,30 @@
 
 import UIKit
 
+// In order to store restaurants in memory we create
+// a structure to populate it with demo data
 struct RestaurantDescription {
-  let name: String
-  let imageName: String
-  let address: String
-  let type: String
-  let description: String
-  let providerName: String
-  let providerImageName: String
+  let name: String // Restaurant Name
+  let imageName: String // Header Image Name
+  let address: String // Restaurant Address
+  let type: String // Restaurant Type
+  let description: String // Restaurant Description
+  let providerName: String // Review Provider Name
+  let providerImageName: String // Review Provider Image Name
 }
 
+// To be notified about touching separate cells
+// we should conform to UICollectionViewDelegate
 extension ViewController: UICollectionViewDelegate {
   
 }
 
+// To link our UICollectionView with the model,
+// we use UICollectionViewDataSource
+// (similar to UITableView examples)
 extension ViewController: UICollectionViewDataSource {
   func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-    return data.count
+    return data.count // number of demo objects
   }
   
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
