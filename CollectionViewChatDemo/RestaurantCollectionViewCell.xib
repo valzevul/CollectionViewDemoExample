@@ -67,6 +67,7 @@
                     </label>
                 </subviews>
             </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="oXs-ut-o7l" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="0gv-hX-pNR"/>
                 <constraint firstItem="dk5-UP-7SQ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="80B-xt-K0A"/>
@@ -92,6 +93,12 @@
                 <constraint firstItem="jjR-2E-knO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="wF9-G8-dXI"/>
             </constraints>
             <size key="customSize" width="252" height="367"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="shadow" value="YES"/>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="15"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
             <connections>
                 <outlet property="providerDescriptionLabel" destination="dk5-UP-7SQ" id="lE4-uj-HpA"/>
                 <outlet property="providerImage" destination="jjR-2E-knO" id="T4K-aH-7ba"/>
