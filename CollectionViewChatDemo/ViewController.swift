@@ -43,11 +43,19 @@ class ViewController: UIViewController {
     }
   }
   
-  let data = [RestaurantDescription]()
+  var data = [RestaurantDescription]()
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    let demo = RestaurantDescription(name: "", imageName: "", address: "", type: "", description: "", providerName: "", providerImageName: "")
+    
+    data.append(demo)
+    data.append(demo)
+    data.append(demo)
+    data.append(demo)
+    data.append(demo)
+    collectionView.reloadData()
   }
 
   override func didReceiveMemoryWarning() {
