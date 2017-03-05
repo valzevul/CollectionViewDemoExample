@@ -21,7 +21,8 @@ class RestaurantCollectionViewCell: UICollectionViewCell {
   
   override func awakeFromNib() {
     super.awakeFromNib()
-    // Initialization code
+    self.contentView.layer.cornerRadius = 15.0
+    self.contentView.layer.masksToBounds = true
   }
 
 }

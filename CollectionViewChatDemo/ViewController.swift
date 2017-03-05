@@ -63,7 +63,7 @@ class ViewController: UIViewController {
     
     let demo2 = RestaurantDescription(name: "Sai Jai Thai", imageName: "demo2", address: "771 O'Farrell Street", type: "Thai Restaurant", description: "Great service too, amazingly friendly.", providerName: "Google", providerImageName: "google")
     
-    let demo3 = RestaurantDescription(name: "Thai Identity Unknown", imageName: "demo3", address: "730 Polksomething Street", type: "Thai Restaurant", description: "Wonderful place and enjoyable food", providerName: "TripAdviser", providerImageName: "trip")
+    let demo3 = RestaurantDescription(name: "Thai Identity Unknown", imageName: "demo3", address: "730 Polksmthg Street", type: "Thai Restaurant", description: "Wonderful place and enjoyable food", providerName: "TripAdviser", providerImageName: "trip")
     
     data.append(demo1)
     data.append(demo2)
