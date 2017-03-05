@@ -77,6 +77,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Chat" id="O2K-cw-fM3"/>
+                    <connections>
+                        <outlet property="collectionView" destination="dPI-wd-qaC" id="gH1-e9-qZ4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
