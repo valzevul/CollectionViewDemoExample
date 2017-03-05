@@ -40,6 +40,8 @@ class ViewController: UIViewController {
     didSet {
       collectionView.delegate = self
       collectionView.dataSource = self
+      collectionView.register(UINib(nibName: "RestaurantCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "RestaurantCollectionViewCell")
+
     }
   }
   
@@ -48,13 +50,16 @@ class ViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    let demo = RestaurantDescription(name: "", imageName: "", address: "", type: "", description: "", providerName: "", providerImageName: "")
+    let demo1 = RestaurantDescription(name: "Lers Ros Thai", imageName: "demo1", address: "730 Larkin Street", type: "Thai Restaurant", description: "Amazing Flavors! Great food!", providerName: "Foursquare", providerImageName: "frsq")
     
-    data.append(demo)
-    data.append(demo)
-    data.append(demo)
-    data.append(demo)
-    data.append(demo)
+    let demo2 = RestaurantDescription(name: "Sai Jai Thai", imageName: "demo2", address: "771 O'Farrell Street", type: "Thai Restaurant", description: "Great service too, amazingly friendly.", providerName: "Google", providerImageName: "google")
+    
+    let demo3 = RestaurantDescription(name: "Thai Identity Unknown", imageName: "demo3", address: "730 Polksomething Street", type: "Thai Restaurant", description: "Wonderful place and enjoyable food", providerName: "TripAdviser", providerImageName: "trip")
+    
+    data.append(demo1)
+    data.append(demo2)
+    data.append(demo3)
+
     collectionView.reloadData()
   }
 
